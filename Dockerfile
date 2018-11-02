@@ -1,5 +1,5 @@
-FROM giabar/gb-httpd
-LABEL maintainer="GiaBar <giabar@giabar.com>"
+FROM giabar/gb-httpd-centos
+LABEL maintainer="giabar@giabar.com"
 ENV DOWNLOAD_URL https://github.com/LimeSurvey/LimeSurvey/archive/3.8.2+180529.tar.gz
 RUN yum clean all &&\
     rm -rf /var/tmp/ &&\
